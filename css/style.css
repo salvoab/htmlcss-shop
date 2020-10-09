@@ -25,7 +25,18 @@ main{
 }
 
 .cuore{
+  display: none;
   position: absolute;
   bottom: 10px;
   right: 50%;
+  font-size: 30px;
+  color: red;
+}
+
+.prodotto:hover{
+  cursor: pointer;
+}
+
+.prodotto:hover > .cuore{
+  display: block;
 }
