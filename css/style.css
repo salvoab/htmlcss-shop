@@ -21,7 +21,6 @@ main{
   position: absolute;
   top: 0;
   right: 0;
-  background: green;
 }
 
 .cuore{
@@ -39,4 +38,16 @@ main{
 
 .prodotto:hover > .cuore{
   display: block;
+}
+
+/*Dai .prodotti prendi i figli .prodotto in posizione
+  2n a partire da n=1, di questi prendi i figli .sconto*/
+.prodotti > .prodotto:nth-child(2n+1) > .sconto{
+  background: green;
+}
+
+/*Dai .prodotti prendi il figlio .prodotto in posizione
+  2, e di questi prendi il figlio sconto*/
+.prodotti > .prodotto:nth-child(2) > .sconto{
+  background: red;
 }
