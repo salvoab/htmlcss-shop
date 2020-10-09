@@ -7,3 +7,25 @@ main{
   width: 70%;
   margin: auto;
 }
+
+.prodotti{
+  margin-top: 25px;
+}
+
+.prodotto{
+  position: relative;
+  display: inline-block;
+}
+
+.sconto{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: green;
+}
+
+.cuore{
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+}
